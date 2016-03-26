@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="beans.Student" table="studentforwebapphibernate">
+		<id name="id">
+<!-- 		<generator class="increment" />	 -->
+<!-- 		<generator class="identity" /> -->
+<!-- 		Getting error in hilo as support has been removed -->
+<!-- 		<generator class="hilo"/>	 -->
+			<generator class="native"></generator>
+		</id>
+		<property name="name"></property>
+		<property name="email"></property>
+		<property name="marks"></property>
+	</class>
+
+</hibernate-mapping>
