@@ -6,8 +6,19 @@ public class Student {
 	private String name;
 	private String email;
 	private int marks;
+	private String contacatno;
 	
-	 public Student() {
+	
+	
+	 public String getContacatno() {
+		return contacatno;
+	}
+
+	public void setContacatno(String contacatno) {
+		this.contacatno = contacatno;
+	}
+
+	public Student() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -18,7 +29,7 @@ public class Student {
 		this.email = email;
 		this.marks = marks;
 	}
-
+ 
 	public int getId() {
 		return id;
 	}
